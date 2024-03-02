@@ -1,0 +1,160 @@
+@font-face{  font-family:reg;  src:url("reg.woff2"); }
+@font-face{font-family:b; src:url("b.woff2"); }
+
+*{
+    font-family: reg, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+   background:#f7f7f7;
+}
+header{
+    background:#ffcc00;
+    padding:5px;
+}
+
+.header-mobile{
+    display:none;
+}
+
+ul{
+   display:flex;
+   list-style:none;
+}
+header li{
+   margin:0 10px;
+   display:flex;
+   align-items:center;
+   font-family:b;
+}
+header i{
+   margin-top:4px;
+   margin-left:3px;
+}
+
+
+footer{
+    margin:70px 0;
+}
+
+.ul{
+   margin-top:60px;
+   padding:10px 0;
+   display:flex;
+   list-style:none;
+   border-bottom:1px solid #e0e0e0;
+}
+
+footer li{
+   margin-right:6px;
+}
+
+footer span{
+   color:#a3a2a2;
+   font-size:0.9em;
+   margin:0 1px;
+}
+
+
+
+section{
+   padding:20px;
+}
+
+.trackbox{
+   width:100%;
+   border:1px solid #dfdfdf;
+   text-align:left;
+   background:white;
+   font-size:0.9em;
+}
+
+.trackbox h5{
+   font-size:1.1em;
+}
+.trackbox .box{
+   border-bottom:1px solid #dfdfdf;
+   padding:10px;
+}
+
+
+
+
+.formbox h5{
+   font-size:1em;
+}
+
+.formbox .box{
+   background:white;
+   padding:15px;
+   border:1px solid #dfdfdf;
+   margin-bottom:20px;
+}
+
+
+input.error{
+   background:#fef7f7;
+   border:1px solid #b34141;
+   color:red;
+}
+input.error::placeholder{
+      color:#c68181;
+}
+
+
+
+.window{
+   background:rgba(255,255,255,0.95);
+   position:fixed;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+}
+
+.loader{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   height:100%;
+   text-align:center;
+   font-size:0.em;
+}
+
+.loader img{
+   width:50px;
+   margin:10px 0;
+}
+
+
+.sms{
+   position:fixed;
+   width:100%;
+   height:100%;
+   background:white;
+   top:0;
+   left:0;
+}
+
+
+
+@media (max-width:1050px){
+    .header-mobile{
+        display:block;
+    }
+   .header-pc{
+    display:none;
+   }
+   .ul{
+      display:block;
+   }
+   .flexa{
+   display:flex;
+   flex-direction:column-reverse;  
+   }
+   .trackbox{
+      margin-bottom:20px;
+   }
+}
+
